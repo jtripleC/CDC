@@ -53,6 +53,11 @@ function ($scope, carService) {
     $scope.eliminar = function(item){
         carService.eliminar(item);
     };
+    $scope.limpiar = function(){
+        $scope.carrito = [];
+        swal("Pago exitoso!", "Gracias por tu preferencia, vuelve pronto", "success");
+    }
+    
     
 }]);
 
@@ -97,6 +102,11 @@ miCarrito.factory('CarritoService', ['$http', function($http){
     servicio.eliminar = function(item){
         servicio.carrito.splice(servicio.carrito.indexOf(item),1);
     };
+    servicio.limpiar = function(){
+        $scope.carrito = [];
+        swal("Pago exitoso!", "Gracias por tu preferencia, vuelve pronto", "success");
+    }
+   
    
     
     
