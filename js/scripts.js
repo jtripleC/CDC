@@ -122,7 +122,7 @@ miCarrito.factory('ProductosService', ['$http', '$filter', function($http, $filt
     });  
 
     
-    var datos = [{"Id": "1", "Categoria": "Librería", "Producto": "Borrador Perfecto", "Precio": "0.5", "Imagen": "/img/E221 BLANCO.png"},
+    var datos = [{"Id": "1", "Categoria": "Librería", "Producto": "Telefono E221 BLANCO", "Precio": "150", "Imagen": "/img/E221 BLANCO.png"},
     {"Id": "2", "Categoria": "Samsung", "Producto": "Teléfono Galaxy A03 64GB Azul", "Precio": "154.99", "Imagen": "/img/Galaxy A03.png"},
     {"Id": "3", "Categoria": "Samsung", "Producto": "Teléfono Galaxy A33 128GB Naranja", "Precio": "159", "Imagen": "/img/Galaxy A33.jpeg"},
     {"Id": "4", "Categoria": "Samsung", "Producto": "Teléfono GALAXY S22 ULTRA SM-S908E", "Precio": "1399", "Imagen": "/img/Galaxy S22 Ultra.png"},
@@ -135,6 +135,7 @@ miCarrito.factory('ProductosService', ['$http', '$filter', function($http, $filt
     servicio.listar = function(fc){
         setTimeout(function() {
             fc(datos);
+
         }, 1000);
     };
     
