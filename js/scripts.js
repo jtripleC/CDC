@@ -54,8 +54,12 @@ function ($scope, carService) {
         carService.eliminar(item);
     };
     $scope.limpiar = function(){
-        $scope.carrito = [];
-        swal("Pago exitoso!", "Gracias por tu preferencia, vuelve pronto", "success");
+        if( $scope.carrito.length == 0){
+            swal ( "Oops" ,  "Por favor añade más productos al carrito" ,  "error" )
+        }else{
+            $scope.carrito = [];
+            swal("Pago exitoso!", "Gracias por tu preferencia, vuelve pronto", "success");
+        }
     }
     
     
@@ -103,8 +107,13 @@ miCarrito.factory('CarritoService', ['$http', function($http){
         servicio.carrito.splice(servicio.carrito.indexOf(item),1);
     };
     servicio.limpiar = function(){
-        $scope.carrito = [];
-        swal("Pago exitoso!", "Gracias por tu preferencia, vuelve pronto", "success");
+        if( $scope.carrito == []){
+            swal ( "Oops" ,  "Por favor añade más productos al carrito" ,  "error" )
+        }else{
+            $scope.carrito = [];
+            swal("Pago exitoso!", "Gracias por tu preferencia, vuelve pronto", "success");
+        }
+       
     }
    
    
