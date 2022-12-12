@@ -100,6 +100,7 @@
 											<th scope="col">Nombre del producto</th>
 											<th scope="col">Descripcion</th>
 											<th scope="col">Precio</th>
+											
 										  </tr>
 										</thead>
 										<tbody>
@@ -107,7 +108,14 @@
 											<th scope="row">{{producto.Id}}</th>
 											<td>{{producto.Producto}}</td>
 											<td>{{producto.Descripcion}}</td>
-											<td>{{producto.Precio|formatoMoneda}}</td>
+											<td>{{producto.Precio|formatoMoneda}}
+												<br><br>
+												<button class="btn btn-info btn-block" ng-click="agregar(producto)"> 
+													<i class="icon-plus-sign"></i>
+													Añadir al Carrito: {{producto.Precio|formatoMoneda}}
+												</button>
+											</td>
+											
 										  </tr>
 										</tbody>
 									  </table>
@@ -132,6 +140,7 @@
 											<th scope="col">Nombre del producto</th>
 											<th scope="col">Descripcion</th>
 											<th scope="col">Precio</th>
+											
 										  </tr>
 										</thead>
 										<tbody>
@@ -139,7 +148,13 @@
 											<th scope="row">{{producto.Id}}</th>
 											<td>{{producto.Producto}}</td>
 											<td>{{producto.Descripcion}}</td>
-											<td>{{producto.Precio|formatoMoneda}}</td>
+											<td>{{producto.Precio|formatoMoneda}}
+												<br><br>
+												<button class="btn btn-info btn-block" ng-click="agregar(producto)"> 
+													<i class="icon-plus-sign"></i>
+													Añadir
+												</button>
+											</td>
 										  </tr>
 										</tbody>
 									  </table>
