@@ -97,6 +97,8 @@ miCarrito.factory('CarritoService', ['$http', function($http){
     servicio.eliminar = function(item){
         servicio.carrito.splice(servicio.carrito.indexOf(item),1);
     };
+   
+    
     
     servicio.listar = function(fc){
         fc(servicio.carrito);
