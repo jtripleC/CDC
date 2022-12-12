@@ -10,7 +10,7 @@ miCarrito.controller(
     'ProductosController', 
     ['$scope','ProductosService', 'CarritoService',
 function ($scope, prodService, carService) {
-    $scope.titulo = "Tienda De Todo";
+    $scope.titulo = "TechnoStore";
     $scope.productos = [];
     
     $scope.agregar = function (p) {
