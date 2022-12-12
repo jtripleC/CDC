@@ -15,6 +15,7 @@ function ($scope, prodService, carService) {
     
     $scope.agregar = function (p) {
         carService.agregar(p);
+        swal("Agregado con Exito", "Revisa la sección de carrito", "success");
     }
     
     $scope.formatoMoneda = function(valor){
@@ -99,7 +100,7 @@ miCarrito.factory('CarritoService', ['$http', function($http){
         } else {
             itemActual.Cantidad++;
         }
-        
+        swal("Agregado con Exito", "Revisa la sección de carrito", "success");
         
     };
     
