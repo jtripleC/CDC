@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Tienda En Línea</title>
-
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -77,7 +74,7 @@
 								<div class="card-body">
 								<h5 class="card-title">{{producto.Producto}}</h5>
 								<p class="card-text">{{producto.Descripcion}}</p>
-								<button data-toggle="modal" data-target="#myModal" class="btn btn-info btn-block" ng-click="agregar(producto)"> 
+								<button data-toggle="modal" data-target="#myModalindividual" class="btn btn-info btn-block" ng-click="agregar(producto)"> 
 									<i class="icon-plus-sign"></i>
 									Añadir al Carrito: {{producto.Precio|formatoMoneda}}
 								</button>
@@ -87,6 +84,38 @@
 							</div>
 						</div>
 						</div>
+
+						<div ng-repeat="producto in productos"  id="myModalindividual" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+							  <div class="modal-content">
+								<div class="modal-header card-header-title">
+								  <h4 class="modal-title card-element-title">Detalles</h4>
+								</div>
+								<div  class="modal-body">
+								  <div class="card-content clearfix">
+									<table class="table table-striped">
+										<thead>
+										  <tr>
+											<th scope="col">#</th>
+											<th scope="col">Nombre del producto</th>
+											<th scope="col">Descripcion</th>
+											<th scope="col">Precio</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th scope="row">{{producto.Id}}</th>
+											<td>{{producto.Producto}}</td>
+											<td>{{producto.Descripcion}}</td>
+											<td>{{producto.Precio|formatoMoneda}}</td>
+										  </tr>
+										</tbody>
+									  </table>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </div>
 
 						<div id="myModal" class="modal fade" role="dialog">
 							<div class="modal-dialog">
