@@ -169,6 +169,8 @@ miCarrito.factory('ProductosService', ['$http', '$filter', function($http, $filt
 }]);
 
 
+
+
 miCarrito.config(function($routeProvider) {
     $routeProvider.
       when('/productos', 
