@@ -81,19 +81,20 @@
 									<i class="icon-plus-sign"></i>
 									Añadir al Carrito: {{producto.Precio|formatoMoneda}}
 								</button>
+								<p>{{producto.Id}}</p>
 								</div>
 							</div>
 							</div>
 						</div>
 						</div>
 
-						<div id="myModal" class="modal fade" role="dialog">
+						<div ng-repeat="producto in productos" id="myModal" class="modal fade" role="dialog">
 							<div class="modal-dialog">
 							  <div class="modal-content">
 								<div class="modal-header card-header-title">
 								  <h4 class="modal-title card-element-title">Detalles</h4>
 								</div>
-								<div  ng-repeat="producto in productos" class="modal-body">
+								<div   class="modal-body">
 								  <div class="card-content clearfix">
 									<table class="table table-striped">
 										<thead>
@@ -106,7 +107,7 @@
 										</thead>
 										<tbody>
 										  <tr>
-											<th scope="row">1</th>
+											<th scope="row">{{producto.Id}}</th>
 											<td>{{producto.Producto}}</td>
 											<td>{{producto.Descripcion}}</td>
 											<td>{{producto.Precio|formatoMoneda}}</td>

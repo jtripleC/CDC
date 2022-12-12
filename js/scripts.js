@@ -144,7 +144,7 @@ miCarrito.factory('ProductosService', ['$http', '$filter', function($http, $filt
     });  
 
     
-    var datos = [{"Id": "1", "Categoria": "Librería", "Producto": "Telefono E221 BLANCO", "Precio": "150", "Imagen": "/img/E221 BLANCO.png", "Descripcion": "Diseño moderno y elegante, para que te sumerjas en el sonido multidimensional de los altavoces estéreo con audio Dolby Atmos®."},
+    var datos = [{"Id": "1", "Categoria": "Otros", "Producto": "Telefono E221 BLANCO", "Precio": "150", "Imagen": "/img/E221 BLANCO.png", "Descripcion": "Diseño moderno y elegante, para que te sumerjas en el sonido multidimensional de los altavoces estéreo con audio Dolby Atmos®."},
     {"Id": "2", "Categoria": "Samsung", "Producto": "Teléfono Galaxy A03 64GB Azul", "Precio": "154.99", "Imagen": "/img/Galaxy A03.png", "Descripcion": "Diseño estilizado y fácil de portar,  con pantalla LCD y resolución HD+,  para disfrutar de todos tus contenidos."},
     {"Id": "3", "Categoria": "Samsung", "Producto": "Teléfono Galaxy A33 128GB Naranja", "Precio": "159", "Imagen": "/img/Galaxy A33.jpeg", "Descripcion": "Diseño delgado y sofisticado, con cámara en la que podrás grabar videos de calidad cinematográfica sin importar si es de día o de noche."},
     {"Id": "4", "Categoria": "Samsung", "Producto": "Teléfono GALAXY S22 ULTRA SM-S908E", "Precio": "1399", "Imagen": "/img/Galaxy S22 Ultra.png","Descripcion": "Galaxy S22 ULTRA, simetría elegante con su marco pulido y delgado. Con S Pen integrado, expúlsalo desde la parte inferior del smartphone para escribir, hacer un dibujo o controlar tu smartphone. "},
